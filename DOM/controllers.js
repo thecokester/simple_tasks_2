@@ -1,8 +1,12 @@
 var controllers = angular.module('myApp.controllers', []);
 
-controllers.controller('TaskController', ['$scope', function($scope) {
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+  });
+
+  controllers.controller('TaskController', ['$scope', function($scope) {
     $scope.ping = function() {
-        alert('You shall not pass!');
+        alert('Angular aint that bad is it!?');
     }
 
     $scope.texter = function() {
@@ -18,7 +22,7 @@ controllers.controller('TaskController', ['$scope', function($scope) {
     }
 
     $scope.spanner = function() {
-        var newSpan = angular.element('<span> Tom Moore </span>');
+        var newSpan = angular.element('<span> His name was Robert Polsen </span>');
         newSpan.appendTo('#spanDiv');
     }
     
@@ -30,7 +34,7 @@ controllers.controller('TaskController', ['$scope', function($scope) {
             counter++;
         }
         else {
-            alert("You don't have any more friends!");
+            alert("No New friends, No New Friends!");
         }
     }
     
